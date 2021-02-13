@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center; 
+    position:sticky;
+} 
+
+
+
+#logo img {
+    margin: 13px 35px;
+    height: 38px;
+}
+
+#navbar ul{
+    display:flex;
+    font-family: 'Oswald', sans-serif;
+}
+#navbar::before{
+content:"";
+background-color: black;
+position:absolute;
+height:100%;
+width:100%;
+z-index: -1;
+opacity: 0.5;
+}
+
+#navbar ul li{
+list-style: none;
+font-size:1.5rem;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 20px 50px;
+    border-radius:20px;
+    text-decoration:none ;
+
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+
+}
+
+/* home section
+ */
+
+#home::before{
+content:" ";
+background: url('home.jpg') no-repeat center center/cover;
+position:absolute;
+height:100%;
+width:100%;
+z-index: -1;
+opacity: 0.7;
+}
+
+ #home{
+     display:flex;
+     flex-direction: column;
+     padding: 4px 200px;
+     justify-content: center;
+     align-items: center;
+     height: 400px;
+
+ }
+
+ .h-primary{
+     font-size:2.8rem;
+     padding-top: 95px;
+     font-family: 'Cairo', sans-serif;
+ }
+ .h-primary1{
+    font-size:2.8rem;
+    
+    font-family: 'Cairo', sans-serif;
+}
+
+ #home h1{
+     color:black;
+     text-align: center;
+     font-family: 'Oswald', sans-serif;
+     margin: 10px;
+      }
+ #home p{
+    color:rgb(24, 2, 2);
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Cairo', sans-serif;
+}
+.btn{
+    padding: 10px 25px;
+    border:2px solid white;
+    background-color: rosybrown;
+    margin:20px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* services */
+#services{
+    display: flex;
+    margin:34px;
+
+}
+#services .box img {
+    height:150px;
+    margin:auto;
+    display:block;
+}
+
+
+#services .box{
+ border:2px solid orange;
+ padding: 34px;
+ margin:3px 3px;
+ border-radius: 20px;
+ background-color: rgb(235, 212, 212);
+}
+#services .box p{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.centre{
+    text-align: center;
+}
+
+.h-secondary{
+    font-size:1.9rem;
+    padding: 12px;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+/* client section */
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section{
+
+position: relative;
+}
+
+#client-section::before{
+ content:"";
+ position: absolute;
+ background: url('bdre.jpg') ;
+ height: 325px;
+ width: 1263px;
+ z-index:-1;
+ opacity:0.7;
+}
+
+
+#clients img{
+   height:150px;
+}
+
+.clients-item{
+    padding:34px;
+
+}
+
+/* contact section  */
+
+#contact::before{
+ content: "";
+ position: absolute;
+ width:100%;
+ height:100%;
+ background:url('cnt.jpg') no-repeat center center/cover;
+ z-index:-1;
+ opacity: 0.7;
+}
+#contact{
+    position: relative;
+}
+
+
+/* footer */
+
+footer{
+    background: black;
+    color:white;
+    padding: 9px 20px;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input ,#contact-box textarea{
+    width:90%;
+    padding:0.5rem;
+    border-radius: 10px ;
+    font-size: 1.3rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
